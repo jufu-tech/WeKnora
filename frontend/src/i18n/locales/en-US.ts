@@ -63,12 +63,12 @@ export default {
     reopen: 'Product tour',
     steps: {
       welcome: {
-        title: 'Welcome to Easy RGA',
+        title: 'Welcome to Easy RAG',
         desc: 'A few quick steps to get you familiar with knowledge bases, chat and agents. Click "Next" to begin.'
       },
       knowledge: {
         title: 'Create your knowledge base',
-        desc: 'Everything starts here: upload documents, web pages or FAQs and Easy RGA parses and indexes them automatically. Click here to open knowledge bases.'
+        desc: 'Everything starts here: upload documents, web pages or FAQs and Easy RAG parses and indexes them automatically. Click here to open knowledge bases.'
       },
       chat: {
         title: 'Start an AI chat',
@@ -1055,37 +1055,37 @@ export default {
       desc: 'Your role can\'t access this settings page. Ask an admin of this workspace to grant the required role.'
     },
     weknoraCloud: {
-      title: 'Easy RGA Cloud',
-      description: 'Configure Easy RGA Cloud APPID and APPSECRET credentials. Credentials are used for model services and document parsing engine.',
+      title: 'Easy RAG Cloud',
+      description: 'Configure Easy RAG Cloud APPID and APPSECRET credentials. Credentials are used for model services and document parsing engine.',
       viewDocs: 'View Docs',
       unconfigured: 'Credentials not configured. Please fill in APPID and APPSECRET.',
       configured: 'Credentials configured and working.',
-      expired: 'Easy RGA Cloud credentials expired',
+      expired: 'Easy RAG Cloud credentials expired',
       expiredDefault: 'Encryption key changed after service restart. Saved credentials cannot be decrypted. Please re-enter credentials.',
       reconfigure: 'Reconfigure',
       appIdLabel: 'APPID',
-      appIdDesc: 'Easy RGA Cloud application ID',
+      appIdDesc: 'Easy RAG Cloud application ID',
       appIdPlaceholder: 'Enter APPID',
       appSecretLabel: 'APPSECRET',
-      appSecretDesc: 'Easy RGA Cloud application secret',
+      appSecretDesc: 'Easy RAG Cloud application secret',
       appSecretPlaceholder: 'Enter APPSECRET',
       saveHint: 'Credentials will be validated and encrypted before saving.',
       saveBtn: 'Save Credentials',
       usageTitle: 'Usage Guide',
-      usageSteps: '1. Save APPID and APPSECRET\n2. Register chat, embedding, rerank, and vlm in Cloud Models below\n3. Parser: Knowledge Base Settings → Parser Engine → Easy RGA Cloud',
+      usageSteps: '1. Save APPID and APPSECRET\n2. Register chat, embedding, rerank, and vlm in Cloud Models below\n3. Parser: Knowledge Base Settings → Parser Engine → Easy RAG Cloud',
       fillRequired: 'Please fill in APPID and APPSECRET',
       saveSuccess: 'Credentials saved successfully',
       saveFailed: 'Failed to save credentials',
-      credentialConfigured: 'Easy RGA Cloud credentials configured.',
+      credentialConfigured: 'Easy RAG Cloud credentials configured.',
       credentialExpired: 'Credentials expired. Please reconfigure.',
-      credentialUnconfigured: 'Easy RGA Cloud credentials not configured. Please set up APPID and APPSECRET first.',
+      credentialUnconfigured: 'Easy RAG Cloud credentials not configured. Please set up APPID and APPSECRET first.',
       checkingStatus: 'Checking credential status...',
       goToSettings: 'Go to Settings',
-      modelHintConfigured: 'Easy RGA Cloud credentials configured. See supported models in',
+      modelHintConfigured: 'Easy RAG Cloud credentials configured. See supported models in',
       modelHintDocsLink: 'API docs',
       modelsSection: {
         title: 'Cloud Models',
-        descReady: 'Register the four standard Easy RGA Cloud models for chat, retrieval, reranking, and vision.',
+        descReady: 'Register the four standard Easy RAG Cloud models for chat, retrieval, reranking, and vision.',
         descPending: 'Save credentials above before adding cloud models here.',
         statusAdded: 'Added',
         statusPending: 'Credentials required',
@@ -1101,10 +1101,10 @@ export default {
       addModelsFailed: 'Failed to add models',
       addModelsEmbeddingFailed: 'Embedding connection test failed; could not detect vector dimension',
       addModelsDisplayName: {
-        chat: 'Easy RGA Cloud Chat',
-        embedding: 'Easy RGA Cloud Embedding',
-        rerank: 'Easy RGA Cloud ReRank',
-        vllm: 'Easy RGA Cloud Vision'
+        chat: 'Easy RAG Cloud Chat',
+        embedding: 'Easy RAG Cloud Embedding',
+        rerank: 'Easy RAG Cloud ReRank',
+        vllm: 'Easy RAG Cloud Vision'
       }
     },
     system: 'System Settings',
@@ -1483,11 +1483,11 @@ export default {
     haveAccount: 'Already have an account?',
     backToLogin: 'Back to Login',
     loginHint: 'Sign in to continue, or create an account below if this is your first time.',
-    firstTime: 'New to Easy RGA?',
+    firstTime: 'New to Easy RAG?',
     registerSuccess: 'Registration successful. Please sign in',
     registerFailed: 'Registration failed',
     subtitle: 'RAG Q&A, ReAct Agent and Wiki — an LLM-powered enterprise knowledge framework',
-    registerSubtitle: 'Create your account and start using Easy RGA',
+    registerSubtitle: 'Create your account and start using Easy RAG',
     emailPlaceholder: 'Enter email address',
     passwordPlaceholder: 'Enter password (8-32 characters, including letters and numbers)',
     confirmPasswordPlaceholder: 'Enter password again',
@@ -1738,7 +1738,7 @@ export default {
     goToAgentSettings: 'Go to agent settings'
   },
   createChat: {
-    title: 'Hi, I am Easy RGA — your knowledge, within reach',
+    title: 'Hi, I am Easy RAG — your knowledge, within reach',
     newSessionTitle: 'New Session',
     messages: {
       createFailed: 'Failed to create session',
@@ -1916,7 +1916,7 @@ export default {
     allowFileUploadDesc: 'When enabled, visitors can upload images and document attachments. Requires the bound agent to support image upload.',
     webhookUrl: 'Webhook URL',
     webhookUrlPlaceholder: 'https://your-server.example.com/weknora/embed-events',
-    webhookUrlDesc: 'Optional. Easy RGA POSTs message_sent / message_received events to this HTTPS endpoint.',
+    webhookUrlDesc: 'Optional. Easy RAG POSTs message_sent / message_received events to this HTTPS endpoint.',
     webhookSecret: 'Webhook secret',
     webhookSecretPlaceholder: 'HMAC-SHA256 secret (X-WeKnora-Signature header)',
     webhookSecretKeep: 'Leave blank to keep the saved secret',
@@ -2890,9 +2890,9 @@ export default {
     loadingInfo: 'Loading information...',
     retry: 'Retry',
     versionLabel: 'App Version',
-    versionDescription: 'Version of the application service (Easy RGA APP)',
+    versionDescription: 'Version of the application service (Easy RAG APP)',
     frontendVersionLabel: 'UI Version',
-    frontendVersionDescription: 'Build version of the UI (Easy RGA UI)',
+    frontendVersionDescription: 'Build version of the UI (Easy RAG UI)',
     versionMismatch: 'Mismatch with app version',
     buildTimeLabel: 'Build Time',
     buildTimeDescription: 'Time when the system was built',
@@ -4595,8 +4595,8 @@ export default {
           desc: 'PaddleOCR-VL Cloud API'
         },
         weknoracloud: {
-          name: 'Easy RGA Cloud',
-          desc: 'Document parsing via Easy RGA Cloud'
+          name: 'Easy RAG Cloud',
+          desc: 'Document parsing via Easy RAG Cloud'
         },
         markitdown: {
           name: 'MarkItDown',
@@ -5428,7 +5428,7 @@ export default {
       capabilityMessageHistory: 'Message history',
       capabilityMessageHistoryHint: 'Let this key search workspace chat history and read chat-history stats. It does not grant workspace configuration access.',
       capabilityManageModels: 'Manage models',
-      capabilityManageModelsHint: 'Manage model definitions, credentials, connectivity checks, and Easy RGA Cloud credentials.',
+      capabilityManageModelsHint: 'Manage model definitions, credentials, connectivity checks, and Easy RAG Cloud credentials.',
       capabilityManageMcpServices: 'Manage MCP services',
       capabilityManageMcpServicesHint: 'Manage MCP services, credentials, tool approval policies, and OAuth state for this principal.',
       capabilityManageDatasources: 'Manage data sources',
@@ -5470,14 +5470,14 @@ export default {
       directWarning: 'Direct user ID trusts the caller-supplied header. Use only for trusted server-to-server calls.',
       directWarningDetail: 'Anyone with the API key can change the user ID header to impersonate another external user and reuse or hijack that user\'s MCP OAuth authorization. Do not use this from browsers or untrusted clients; use Signed token for end-user apps.',
       signedRecommended: 'Recommended for user-facing apps: your backend signs a short-lived HS256 JWT for the external user.',
-      signedFlowDetail: 'Keep the HMAC secret only on Easy RGA and your trusted backend—never put it in requests or ship it to browsers. The request header carries the JWT string signed with that secret (it changes on each issuance or after expiry), not the secret itself. JWT must include sub (external user ID), tenant_id, aud=easyrga, and exp (max 24h lifetime).',
+      signedFlowDetail: 'Keep the HMAC secret only on Easy RAG and your trusted backend—never put it in requests or ship it to browsers. The request header carries the JWT string signed with that secret (it changes on each issuance or after expiry), not the secret itself. JWT must include sub (external user ID), tenant_id, aud=easyrga, and exp (max 24h lifetime).',
       directHeader: 'User ID header',
       requireDirectHeader: 'Require user ID header',
       requireDirectHeaderDesc: 'When enabled, API Key requests without the user ID header are rejected; when disabled, all requests are treated as the whole workspace with no per-user distinction.',
       tokenHeader: 'Token header',
       tokenHeaderDesc: 'Clients send the backend-signed JWT in this fixed header.',
       hmacSecret: 'HMAC secret',
-      hmacSecretDesc: 'Same secret stored in Easy RGA; used only on your backend to sign JWTs—never send it as a request header.',
+      hmacSecretDesc: 'Same secret stored in Easy RAG; used only on your backend to sign JWTs—never send it as a request header.',
       secretConfigured: 'Secret configured (not shown again); enter a new value to rotate',
       secretSavedCopyHint: 'Secret saved. Copy it to your backend now — you will not be able to view it again after leaving this page.',
       generateSecret: 'Generate secret',
@@ -5486,7 +5486,7 @@ export default {
       hmacSecretResetConfirmOk: 'Reset',
       hmacSecretResetConfirmCancel: 'Cancel',
       tokenSignExample: 'Backend JWT signing example (Go)',
-      signedRequestStep0: '# 0. Sign JWT on your backend (HS256, aud=easyrga, sub=user id, tenant_id={tenantId}, exp<=24h)',
+      signedRequestStep0: '# 0. Sign JWT on your backend (HS256, aud=easyrag, sub=user id, tenant_id={tenantId}, exp<=24h)',
       signedRequestStep0Hint: '#    Put the JWT in {headerName} — not the HMAC secret',
       requestExampleCreateSession: '# 1. Create a session',
       requestExampleAgentChat: '# 2. Agent chat (SSE; replace <session_id> with the id from step 1)',
@@ -5551,7 +5551,7 @@ export default {
     },
     chrome: {
       title: 'Knowledge Assistant',
-      subtitle: 'For self-hosted Easy RGA: ask questions in a sidebar, clip web pages, and save Markdown notes into your knowledge bases while you browse.',
+      subtitle: 'For self-hosted Easy RAG: ask questions in a sidebar, clip web pages, and save Markdown notes into your knowledge bases while you browse.',
       capabilitiesTitle: 'Core capabilities',
       capabilities: {
         qa: {
@@ -5585,7 +5585,7 @@ export default {
         },
         port: {
           title: 'Desktop: fixed port (recommended)',
-          desc: 'On Easy RGA Desktop, set a fixed API port (e.g. 37841) in API Info so the URL stays stable across restarts.'
+          desc: 'On Easy RAG Desktop, set a fixed API port (e.g. 37841) in API Info so the URL stays stable across restarts.'
         },
         install: {
           title: 'Install the extension',
@@ -5604,8 +5604,8 @@ export default {
       storeMeta: 'Chrome Web Store · v1.0.0'
     },
     claw: {
-      title: 'Easy RGA Skill',
-      subtitle: 'Import documents and run hybrid retrieval (vector + keyword) via the Easy RGA REST API—for uploads, URL imports, Markdown entries, and cross-KB search.',
+      title: 'Easy RAG Skill',
+      subtitle: 'Import documents and run hybrid retrieval (vector + keyword) via the Easy RAG REST API—for uploads, URL imports, Markdown entries, and cross-KB search.',
       capabilitiesTitle: 'Skill capabilities',
       capabilities: {
         upload: {
@@ -5637,7 +5637,7 @@ export default {
         },
         env: {
           title: 'Configure environment',
-          desc: 'Set EASYRGA_BASE_URL and EASYRGA_API_KEY in your shell or ~/.zshrc / ~/.bashrc. The example below uses your current API base URL—replace the API Key with your actual value.'
+          desc: 'Set EASYRAG_BASE_URL and EASYRAG_API_KEY in your shell or ~/.zshrc / ~/.bashrc. The example below uses your current API base URL—replace the API Key with your actual value.'
         },
         install: {
           title: 'Install the skill',
@@ -5652,10 +5652,10 @@ export default {
       copy: 'Copy',
       copyEnvSuccess: 'Environment example copied',
       copyCmdSuccess: 'Install command copied',
-      ecosystemNote: 'Skill hosted on ClawHub ({\'@\'}lyingbug/easyrga). See the ClawHub page for full API docs and version history.',
+      ecosystemNote: 'Skill hosted on ClawHub ({\'@\'}lyingbug/easyrag). See the ClawHub page for full API docs and version history.',
       installCta: 'Open ClawHub',
-      installCtaHint: 'Install Easy RGA Skill · opens in a new tab',
-      hubMeta: 'ClawHub · {\'@\'}lyingbug/easyrga · MIT-0'
+      installCtaHint: 'Install Easy RAG Skill · opens in a new tab',
+      hubMeta: 'ClawHub · {\'@\'}lyingbug/easyrag · MIT-0'
     }
   },
   credential: {
