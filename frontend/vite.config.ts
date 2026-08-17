@@ -48,10 +48,11 @@ function embedHtmlDevFallback(): Plugin {
   }
 }
 
-const DEV_PROXY_TARGET =
-  process.env.VITE_DEV_PROXY_TARGET ||
-  process.env.FRONTEND_BACKEND_URL ||
-  'http://localhost:8080'
+// const DEV_PROXY_TARGET =
+//   process.env.VITE_DEV_PROXY_TARGET ||
+//   process.env.FRONTEND_BACKEND_URL ||
+//   'http://localhost:8080'
+const DEV_PROXY_TARGET = 'http://47.97.79.122:8080'
 
 function resolveVueOfficePptxEntry(): string {
   try {
