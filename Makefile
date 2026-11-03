@@ -110,7 +110,9 @@ docker-build-app:
 		--build-arg COMMIT_ID_ARG="$$COMMIT_ID" \
 		--build-arg BUILD_TIME_ARG="$$BUILD_TIME" \
 		--build-arg GO_VERSION_ARG="$$GO_VERSION" \
-		-f docker/Dockerfile.app -t $(DOCKER_IMAGE):$(DOCKER_TAG) .
+		-f docker/Dockerfile.app -t $(DOCKER_IMAGE):202611031503 .
+		
+#-f docker/Dockerfile.app -t $(DOCKER_IMAGE):$(DOCKER_TAG) .
 
 # Build docreader Docker image
 docker-build-docreader:

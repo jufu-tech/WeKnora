@@ -5,11 +5,11 @@ WORKDIR /app
 
 # 通过构建参数接收敏感信息
 ARG GOPRIVATE_ARG
-ARG GOPROXY_ARG
+ARG GOPROXY_ARG=https://goproxy.cn,direct
 ARG GOSUMDB_ARG=off
 ARG APK_MIRROR_ARG
 
-# 设置Go环境变量
+# 设置Go环境变量（确保代理一定生效）
 ENV GOPRIVATE=${GOPRIVATE_ARG}
 ENV GOPROXY=${GOPROXY_ARG}
 ENV GOSUMDB=${GOSUMDB_ARG}
@@ -21,8 +21,8 @@ RUN if [ -n "$APK_MIRROR_ARG" ]; then \
     apt-get update && \
     apt-get install -y git build-essential libsqlite3-dev
 
-# Install migrate tool
-RUN go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+# Install migrate tool（显式指定 GOPROXY 避免依赖环境，最保险）
+RUN GOPROXY=https://goproxy.cn,direct go install -tags 'postgres' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
 
 # Copy go mod and sum files
 COPY go.mod go.sum ./
@@ -114,3 +114,4 @@ EXPOSE 8080
 
 ENTRYPOINT ["./scripts/docker-entrypoint.sh"]
 CMD ["./WeKnora"]
+
