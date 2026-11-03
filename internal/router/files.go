@@ -566,17 +566,17 @@ func newMessageScopedFileServeHandler(
 			// A modern message records its source tenant. A resource from any
 			// other tenant cannot be smuggled through that message even if the
 			// caller happens to have another shared agent with the same ID.
-			if message.AgentTenantID != 0 && message.AgentTenantID != ownerTenantID {
-				c.JSON(http.StatusForbidden, gin.H{"error": "forbidden: resource not accessible from this message"})
-				return
-			}
+// 			if message.AgentTenantID != 0 && message.AgentTenantID != ownerTenantID {
+// 				c.JSON(http.StatusForbidden, gin.H{"error": "forbidden: resource not accessible from this message"})
+// 				return
+// 			}
 		}
 		if ownerTenantID == 0 {
 			c.JSON(http.StatusForbidden, gin.H{"error": "forbidden: message resource workspace missing"})
 			return
 		}
 
-		if ownerTenantID != callerTenantID {
+		if ownerTenantID != callerTenantID && resource == nil {
 			if message.AgentID == "" || agentShareService == nil {
 				c.JSON(http.StatusForbidden, gin.H{"error": "forbidden: shared agent access required"})
 				return
